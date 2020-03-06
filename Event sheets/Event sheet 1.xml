@@ -2,5 +2,83 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <variable comment="vidas do hero" constant="0" name="Vida" sid="389536389073498" static="0" type="number">5</variable>
+        <variable comment="Pontos do jogo" constant="0" name="pontos" sid="120524015248551" static="0" type="number">0</variable>
+        <event-block sid="691303829946169">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="377022064065530" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="197744665291241" type="Placar">
+                    <param id="0" name="Pin to">hero</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="140784356158883" type="Sprite3">
+                    <param id="0" name="Object">hero</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="997831109394584" type="Sprite3">
+                    <param id="0" name="Pin to">hero</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="679334162389428">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="338109335486803" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="152095862784272" type="Placar">
+                    <param id="0" name="Text">&quot;Pontos: &quot;&amp;pontos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="937760241665957">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="866596577019414" type="hero">
+                    <param id="0" name="Object">fogo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="900613317575559" type="hero" />
+                <action id="-26" name="Restart layout" sid="410196969434075" type="System" />
+                <action id="-11" name="Subtract from" sid="547213997488581" type="System">
+                    <param id="0" name="Variable">Vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="914437993269862">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="467619327211735" type="hero">
+                    <param id="0" name="Object">Glit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="916857377899437" type="hero" />
+                <action id="-26" name="Restart layout" sid="101989433810894" type="System" />
+                <action id="-11" name="Subtract from" sid="728459182402164" type="System">
+                    <param id="0" name="Variable">Vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="968077302100057">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="797536727098912" type="hero">
+                    <param id="0" name="Object">prêmio</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="804221250262625" type="prêmio" />
+                <action id="-10" name="Add to" sid="429665328953194" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
