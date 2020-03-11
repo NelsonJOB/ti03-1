@@ -10,17 +10,14 @@
     <unique-id>2pvelhovtzeeh</unique-id>
     <saved-with-version>27700</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
-        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
-        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -66,129 +63,10 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566525225263268" speed="5">
                     <frame duration="1" hotspotX="0.515625" hotspotY="0.193359" original-source="C:\Users\aluno22\Desktop\Mushero.png">
                         <collision-poly>
-                            <point x="0.340906" y="0.100672" />
-                            <point x="0.667937" y="0.101563" />
-                            <point x="0.675437" y="0.282906" />
-                            <point x="0.34375" y="0.275" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite2" sid="439430581216342">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="485002336452983">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552025978777029" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="chao" sid="345369506699512">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="768616601069024">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596411201016481" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="fogo" sid="563264979185431">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="557485211133708">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-                <behavior-type name="Solid" sid="366447650624291">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549104892415015" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.076" y="0.176" />
-                            <point x="0.824" y="0.16" />
-                            <point x="1" y="0.652" />
-                            <point x="0" y="0.624" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite5" sid="716400108401671">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298128085220574" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.132" y="0.04" />
-                            <point x="0.836" y="0.028" />
-                            <point x="0.788" y="0.444" />
-                            <point x="0.016" y="0.384" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="planodefundo" sid="225157515824633">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929994866227517" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\aluno22\Desktop\New Piskel-1.png.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite7" sid="576776963358903">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="998862926004968" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite8" sid="740033939066486">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Persist" sid="490704422048246">
-                    <behavior id="Persist" />
-                </behavior-type>
-                <behavior-type name="Solid" sid="987622507712892">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Bullet" sid="452541752707262">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881239301436878" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Glit" sid="963812529021359">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pathfinding" sid="790418064553045">
-                    <behavior id="Pathfinding" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="779307609230429" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.172" y="0.092" />
-                            <point x="0.884" y="0.172" />
-                            <point x="0.972" y="0.936" />
-                            <point x="0.068" y="0.912" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.996094" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -261,6 +139,33 @@
                 <animation framecount="1" loop="0" name="Falling" pingpong="0" repeatcount="0" repeatto="0" sid="253906210327503" speed="0">
                     <frame duration="1" hotspotX="0.507246" hotspotY="0.5" original-source="C:\Users\aluno22\Desktop\Sprite\kenney-platformer-art-base-pack\Player\p1_hurt.png" />
                 </animation>
+                <animation framecount="1" loop="0" name="Duck" pingpong="0" repeatcount="0" repeatto="0" sid="344981172177738" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="C:\Users\aluno22\Desktop\TDS3 - noite\GameAlienLifeTDS03-master\Sprite\kenney-platformer-art-base-pack\Player\p1_duck.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo" sid="203056989853467">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372943342022140" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="215677440509674">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Sprite4" sid="976638637323995">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="896423611056912">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572501522955258" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
             </animation-folder>
         </object-type>
     </object-folder>
@@ -271,7 +176,9 @@
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>

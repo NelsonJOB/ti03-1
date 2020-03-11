@@ -39,28 +39,13 @@
         <event-block sid="937760241665957">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="866596577019414" type="hero">
-                    <param id="0" name="Object">fogo</param>
+                    <param id="0" name="Object">inimigo</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="900613317575559" type="hero" />
                 <action id="-26" name="Restart layout" sid="410196969434075" type="System" />
                 <action id="-11" name="Subtract from" sid="547213997488581" type="System">
-                    <param id="0" name="Variable">Vida</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="914437993269862">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="467619327211735" type="hero">
-                    <param id="0" name="Object">Glit</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="916857377899437" type="hero" />
-                <action id="-26" name="Restart layout" sid="101989433810894" type="System" />
-                <action id="-11" name="Subtract from" sid="728459182402164" type="System">
                     <param id="0" name="Variable">Vida</param>
                     <param id="1" name="Value">1</param>
                 </action>
@@ -79,6 +64,78 @@
                     <param id="1" name="Value">10</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="821707740992967">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="449030545991217" type="hero" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="439546078040006" type="Sprite3">
+                    <param id="0" name="Animation">&quot;walking&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="392819012711472">
+            <conditions>
+                <condition id="-22" name="Else" sid="360311920537263" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="423432909842022" type="Sprite3">
+                    <param id="0" name="Animation">&quot;stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="290437508770299">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="246569365070930" type="hero" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="941783527427817" type="Sprite3">
+                    <param id="0" name="Animation">&quot;jumping&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="421690399815736">
+            <conditions>
+                <condition behavior="Platform" id="4" name="Is falling" sid="559075555551740" type="hero" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="688673434784323" type="Sprite3">
+                    <param id="0" name="Animation">&quot;falling&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="277216852432010">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="545022639552620" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="641298530010256" type="Sprite3">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="149603712053882">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="209043387236203" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="956086460847661" type="Sprite3">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="365174861526539">
+            <conditions />
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
